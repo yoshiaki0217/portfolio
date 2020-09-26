@@ -1,0 +1,471 @@
+/* フォームのCSS */
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.contact_wrap h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form_ttl {
+  text-align: center;
+  font-size: 1.8rem;
+  padding-left: 30px;
+  margin-bottom: 40px;
+  font-family: 'Noto Sans Japanese',
+    "游明朝体",
+    "Yu Mincho";
+}
+
+.send {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto 70px;
+}
+
+.send li {
+  width: 33%;
+  background: #000;
+  padding: 1.7vw 0;
+  background: url('../images/contact_dco.png') no-repeat top center / contain;
+  text-align: center;
+}
+
+.send .color {
+  background: url('../images/contact_dco02.png') no-repeat top center / contain;
+}
+
+.inputs {
+  height: 30px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.btn-area {
+  text-align: center;
+}
+
+.cmn_contact_btn {
+  color: #fff;
+  width: 120px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  background: #fb5f6d;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+  border-radius: 30px;
+}
+
+.cmn_contact_btn:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width:767px) {
+  .contact {
+    padding: 80px 10px;
+  }
+
+  .contact_wrap h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form_ttl {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .cmn_contact_btn {
+    width: 100px;
+    font-size: 1.4rem;
+    padding: 5px 0;
+  }
+
+  .send {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .send li {
+    width: 33%;
+  }
+}
+
+
+/* ーーーーー共通 */
+
+
+
+/* #form */
+
+#form .form_wrap {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#form .from_inner {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 70%;
+}
+
+.contact_from #form .item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  height: 130px;
+  margin-top: -1px;
+}
+
+.item textarea {
+  height: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+#form .item:nth-of-type(6) {
+  height: 225px;
+}
+
+#form .item:nth-of-type(6) .label {
+  display: flex;
+  align-items: center;
+}
+
+#form .erro {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
+}
+
+
+#form .contact_from .label {
+  width: 200px;
+  margin-right: 20px;
+  padding: 30px 10px 30px 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: #effcf9;
+  border-right: solid 1px #000;
+}
+
+#form .impot {
+  color: #fff;
+  background: red;
+  padding: 3px 5px;
+  font-size: 1rem;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#form .btn-area {
+  text-align: center;
+}
+
+#form .btn-area {
+  margin-top: 40px;
+}
+
+.recruit {
+  margin-bottom: 30px;
+}
+
+
+@media screen and (max-width:767px) {
+  #form .contact_from .label {
+    width: 100%;
+    margin-right: 0;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-right: none;
+  }
+
+  #form .item {
+    display: block;
+    border: none;
+    margin-top: 0;
+    height: auto;
+  }
+
+  #form .from_inner {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  #form .from_inner {
+    height: 85%;
+  }
+
+  #form .erro {
+    position: absolute;
+    top: -17px;
+    left: 20px;
+    color: red;
+  }
+}
+
+/* #form */
+
+
+/* ------------------------------------------- */
+
+
+/* confirm */
+
+#confim .confim_ttl {
+  text-align: center;
+}
+
+.data {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.data_list {
+  justify-content: flex-start;
+}
+
+.data_list:not(:first-child) {
+  margin-top: -1px;
+}
+
+.data_list dd {
+  padding-left: 20px;
+  width: 70%;
+}
+
+.hidden {
+  display: none;
+}
+
+.data_list input,
+.data_list textarea {
+  border: none;
+  pointer-events: none;
+  resize: none;
+}
+
+.data_btn {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact_wrap span {
+  display: block;
+  font-size: 2rem;
+}
+
+@media screen and (max-width:767px) {
+  .data_list dt {
+    width: 100%;
+    padding: 10px;
+    border-right: none;
+  }
+
+
+  .data_list dd {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .data_btn {
+    max-width: 250px;
+  }
+}
+
+
+
+/* complete */
+#complete .complete_ttl {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+
+
+
+@media screen and (max-width:767px) {
+  #complete .send {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.item {
+  margin-bottom: 30px;
+}
+
+.item input,
+.item textarea {
+  border: solid 1px #ddd;
+}
+
+.from_inner {
+  display: flex;
+}
+
+.erro {
+  margin-left: 6px;
+  font-size: 1rem;
+  padding-top: 5px;
+  color: #fb5f6d;
+}
+
+
+.contact_from {
+  color: #555;
+  letter-spacing: 0.08em;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(31, 215, 228, 0.04);
+  padding: 40px 60px;
+  border-radius: 30px;
+}
+
+.label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.label span {
+  padding: 3px 5px;
+  background: #fb5f6d;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.recruit {
+  margin-bottom: 50px;
+}
+
+.recruit div {
+  line-height: 1.4;
+}
+
+.data_text {
+  word-break: break-word;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+
+
+
+#confirm form {
+  letter-spacing: 0.08em;
+}
+
+
+#confirm .data dt {
+  border: none;
+  font-size: 1.5rem;
+  max-width: 200px;
+  width: 100%;
+  font-weight: normal;
+  text-align: center;
+  color: #555;
+  padding: 30px 0;
+}
+
+#confirm .data_list {
+  align-items: center;
+  background: rgba(31, 215, 228, 0.04);
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+#confirm .data dd {
+  display: block;
+  border-left: solid 1px #fff;
+  background: transparent;
+  padding: 0 0 0 10px;
+}
+
+.data_list input,
+.data_list textarea {
+  color: #555;
+  background: transparent;
+}
+
+
+
+
+.contact_text p {
+  font-size: 1.3rem;
+  line-height: 2;
+  margin-bottom: 60px;
+  background: rgba(31, 215, 228, 0.1);
+  color: #555;
+  padding: 30px 20px;
+  border-radius: 30px;
+}
+
+
+@media screen and (max-width:767px) {
+  .contact_from {
+    padding: 30px 15px;
+  }
+
+  .label {
+    font-size: 1.3rem;
+  }
+
+  .label span {
+    padding: 1px 4px;
+    margin-left: 0;
+  }
+
+  #confirm .data dt {
+    font-size: 1.3rem;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+
+  #confirm .data dd {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  #confirm .inputs,
+  #confirm .data_text {
+    text-align: center;
+  }
+
+  #confirm .data_list {
+    margin-bottom: 20px;
+  }
+}
